@@ -58,7 +58,7 @@ Click the links below to download the checkpoint for the corresponding model typ
       <th>KITTI->Cityscapes</th>
       <td>Faster-RCNN</td>
       <td>0.556</td>
-      <td><a href="https://drive.google.com/drive/folders/1TuZMUqbA3Or-BtJPo29lDJ5cs_4bkkG6">model</a>)</td>
+      <td><a href="https://drive.google.com/drive/folders/1TuZMUqbA3Or-BtJPo29lDJ5cs_4bkkG6">model</a></td>
     </tr>
     <tr>
       <th>Cityscapes->BDD100k</th>
