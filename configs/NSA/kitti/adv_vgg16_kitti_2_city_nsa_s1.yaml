@@ -1,0 +1,57 @@
+MODEL:
+  BACKBONE:
+    NAME: 'vgg16'
+  ROI_BOX_HEAD:
+    NUM_CLASSES: 2
+    BOX_PREDICTOR: 'vgg16_predictor'
+    POOL_TYPE: 'align'
+  MODE:
+    USE_STUDENT: True
+    INSRANCE_ADV: True
+    UPDATE_TEACHER_ITERUM: 100
+    NET_MOMENTUM: 0.99
+    INIT_DIS_NET: 400
+    
+    TRAIN_PROCESS: 'S1'
+    TEST_PROCESS: 'TC'
+    
+ADV:
+  LAYERS: [False, False, True]
+  DIS_MODEL:
+    - in_channels: 512
+      func_name: 'cross_entropy'
+      pool_type: 'avg'
+      loss_weight: 1.0
+      window_strides: [2, 2, 2, 2, 2, 2, 2]
+      window_sizes: [3, 9, 15, 21, 27, 33, 37]
+DATASETS:
+  TRAINS: ['kitti_train']
+  TARGETS: ['cityscapes_car_train']
+  TESTS: ['cityscapes_car_val']
+INPUT:
+  TRANSFORMS_TRAIN:
+    - name: 'random_flip'
+    - name: 'resize'
+      min_size: 600
+    - name: 'normalize'
+      mean: [0.5, 0.5, 0.5]
+      std: [0.5, 0.5, 0.5]
+      to_01: True
+    - name: 'collect'
+  TRANSFORMS_TEST:
+    - name: 'resize'
+      min_size: 600
+    - name: 'normalize'
+      mean: [0.5, 0.5, 0.5]
+      std: [0.5, 0.5, 0.5]
+      to_01: True
+    - name: 'collect'
+SOLVER:
+  EPOCHS: 25
+  STEPS: (1600, 2200)
+  LR: 1e-3
+  BATCH_SIZE: 14
+TEST:
+  EVAL_TYPES: ['voc']
+
+WORK_DIR: './debug/adv_vgg16_kitti_nsa_s1'
