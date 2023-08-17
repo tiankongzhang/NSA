@@ -29,7 +29,6 @@ Three model versions of the model are available with different backbone sizes. T
 <table>
   <thead>
     <tr style="text-align: right;">
-      <th></th>
       <th>Adaptation Type</th>
       <th>Detector</th>
       <th>mAP</th>
@@ -41,31 +40,31 @@ Three model versions of the model are available with different backbone sizes. T
       <th>Cityscapes->FoggyCityscapes</th>
       <td>Faster-RCNN</td>
       <td>0.527</td>
-      <td>model(https://drive.google.com/drive/folders/1TuZMUqbA3Or-BtJPo29lDJ5cs_4bkkG6)</td>
+      <td><a href="https://drive.google.com/drive/folders/1TuZMUqbA3Or-BtJPo29lDJ5cs_4bkkG6">model</a></td>
     </tr>
     <tr>
       <th>Cityscapes->RainCityscapes</th>
       <td>Faster-RCNN</td>
       <td>0.587</td>
-      <td>model(https://drive.google.com/drive/folders/1TuZMUqbA3Or-BtJPo29lDJ5cs_4bkkG6)</td>
+      <td><a href="https://drive.google.com/drive/folders/1TuZMUqbA3Or-BtJPo29lDJ5cs_4bkkG6">model</a></td>
     </tr>
     <tr>
       <th>Sim10k->Cityscapes</th>
       <td>Faster-RCNN</td>
       <td>0.563</td>
-      <td>model(https://drive.google.com/drive/folders/1TuZMUqbA3Or-BtJPo29lDJ5cs_4bkkG6)</td>
+      <td><a href="https://drive.google.com/drive/folders/1TuZMUqbA3Or-BtJPo29lDJ5cs_4bkkG6">model</a></td>
     </tr>
     <tr>
       <th>KITTI->Cityscapes</th>
       <td>Faster-RCNN</td>
       <td>0.556</td>
-      <td>model(https://drive.google.com/drive/folders/1TuZMUqbA3Or-BtJPo29lDJ5cs_4bkkG6)</td>
+      <td><a href="https://drive.google.com/drive/folders/1TuZMUqbA3Or-BtJPo29lDJ5cs_4bkkG6">model</a>)</td>
     </tr>
     <tr>
       <th>Cityscapes->BDD100k</th>
       <td>Faster-RCNN</td>
       <td>0.355</td>
-      <td>model(https://drive.google.com/drive/folders/1TuZMUqbA3Or-BtJPo29lDJ5cs_4bkkG6)</td>
+      <td><a href="https://drive.google.com/drive/folders/1TuZMUqbA3Or-BtJPo29lDJ5cs_4bkkG6">model</a></td>
     </tr>
   </tbody>
 </table>
