@@ -24,7 +24,7 @@ pip install imgaug==0.4.0
 
 ## Model Checkpoints
 
-Three model versions of the model are available with different backbone sizes. These models can be instantiated by running
+Click the links below to download the checkpoint for the corresponding model type：
 
 <table>
   <thead>
